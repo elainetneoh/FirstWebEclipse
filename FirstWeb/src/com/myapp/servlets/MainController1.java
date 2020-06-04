@@ -8,13 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(description = "This is the main controller", urlPatterns = { "/hello" })
-public class MainController extends HttpServlet {
+public class MainController1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor. 
      */
-    public MainController() {
+    public MainController1() {
     	super();
         // TODO Auto-generated constructor stub
     }
@@ -30,7 +30,7 @@ public class MainController extends HttpServlet {
 			uname= request.getParameter("uname");}
 		
 
-		String message="Hello "+uname+" You have succesfully logging in ";
+		String message="Hello dear dear "+uname+" You have succesffully loging in ";
 		request.setAttribute("message", message);
         request.getRequestDispatcher("/Welcome.jsp").forward(request, response);
 	}
