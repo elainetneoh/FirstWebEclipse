@@ -30,7 +30,7 @@ public class MainController extends HttpServlet {
 			uname= request.getParameter("uname");}
 		
 
-		String message="Hello "+uname+" You have succesffully loging in ";
+		String message="Hello dear "+uname+" You have succesffully loging in ";
 		request.setAttribute("message", message);
         request.getRequestDispatcher("/Welcome.jsp").forward(request, response);
 	}
